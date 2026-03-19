@@ -92,6 +92,7 @@ class CE_AMCC_Measurement(BaseMeasurement, EntryData):
 
 class CE_AMCC_Chronoamperometry(Chronoamperometry, EntryData, PlotSection):
     m_def = Section(
+        links=["https://w3id.org/nfdi4cat/voc4cat_0007207"],
         a_eln=dict(
             hide=[
                 'metadata_file',
@@ -156,6 +157,7 @@ class CE_AMCC_Chronoamperometry(Chronoamperometry, EntryData, PlotSection):
 
 class CE_AMCC_Chronopotentiometry(Chronopotentiometry, EntryData, PlotSection):
     m_def = Section(
+        links=["https://w3id.org/nfdi4cat/voc4cat_0007208"],
         a_eln=dict(
             hide=[
                 'metadata_file',
@@ -337,6 +339,7 @@ class CE_AMCC_ConstantVoltageMode(Chronoamperometry, EntryData, PlotSection):
 
 class CE_AMCC_CyclicVoltammetry(CyclicVoltammetry, EntryData, PlotSection):
     m_def = Section(
+        links=["https://w3id.org/nfdi4cat/voc4cat_0000082"],
         a_eln=dict(
             hide=[
                 'users',
@@ -414,6 +417,7 @@ class CE_AMCC_GEIS(
     ElectrochemicalImpedanceSpectroscopyMultiple, EntryData, PlotSection
 ):
     m_def = Section(
+        links=["https://w3id.org/nfdi4cat/voc4cat_0007209"],
         a_eln=dict(
             hide=[
                 'environment',
@@ -481,6 +485,7 @@ class CE_AMCC_GEIS(
 
 class CE_AMCC_LinearSweepVoltammetry(LinearSweepVoltammetry, EntryData, PlotSection):
     m_def = Section(
+        links=["https://w3id.org/nfdi4cat/voc4cat_0007211"],
         a_eln=dict(
             hide=[
                 'metadata_file',
@@ -551,6 +556,7 @@ class CE_AMCC_LinearSweepVoltammetry(LinearSweepVoltammetry, EntryData, PlotSect
 
 class CE_AMCC_OpenCircuitVoltage(OpenCircuitVoltage, EntryData, PlotSection):
     m_def = Section(
+        links=["https://w3id.org/nfdi4cat/voc4cat_0007251"],
         a_eln=dict(
             hide=[
                 'metadata_file',
@@ -615,6 +621,7 @@ class CE_AMCC_PEIS(
     ElectrochemicalImpedanceSpectroscopyMultiple, EntryData, PlotSection
 ):
     m_def = Section(
+        links=["https://w3id.org/nfdi4cat/voc4cat_0007209"],
         a_eln=dict(
             hide=[
                 'environment',
@@ -683,6 +690,7 @@ class CE_AMCC_PEIS(
 
 class CE_AMCC_ZIR(ElectrochemicalImpedanceSpectroscopyMultiple, EntryData):
     m_def = Section(
+        links=["https://w3id.org/nfdi4cat/voc4cat_0007209"],
         a_eln=dict(
             hide=[
                 'environment',
