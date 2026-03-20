@@ -139,7 +139,7 @@ necc_find_experiments_app = App(
                 items=[
                     MenuItemPeriodicTable(
                         title='Cathode Material',
-                        search_quantity=f'data.result_properties.anode_material#{schema}',
+                        search_quantity=f'data.result_properties.cathode_material#{schema}',
                     ),
                     MenuItemTerms(
                         search_quantity=f'data.properties.cathode.name#{schema}',
