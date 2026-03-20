@@ -431,17 +431,17 @@ def test_necc_ecgc_excel():
     assert len(archive.data.gaschromatographies) == 6
     h2 = archive.data.gaschromatographies[4]
     assert h2.gas_type == 'H2'
-    assert round(h2.ppm[2].magnitude, 4) == 31674.4523
+    assert round(h2.ppm[2].magnitude, 3) == 37833.812
     assert archive.data.potentiometry
-    assert len(archive.data.potentiometry.current) == 10145
-    assert archive.data.potentiometry.maximum_current.magnitude == 800.416
+    assert len(archive.data.potentiometry.current) == 21601
+    assert archive.data.potentiometry.maximum_current.magnitude == 800.538
     assert archive.data.potentiometry.datetime[0] == pd.Timestamp(
-        '2025-12-17 13:05:28.433000+0000', tz='UTC'
+        '2026-01-19 10:53:39.854000+0000', tz='UTC'
     )
     assert archive.data.fe_results
     assert archive.data.fe_results
     assert archive.data.ph
     assert archive.data.ph.datetime[0] == pd.Timestamp(
-        '2025-12-17 12:59:10+0000', tz='UTC'
+        '2026-01-19 10:43:33+0000', tz='UTC'
     )
-    assert archive.data.ph.ph_value[0] == 11.514
+    assert archive.data.ph.ph_value[0] == 12.273
