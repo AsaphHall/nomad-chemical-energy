@@ -27,7 +27,7 @@ from nomad.client import normalize_all, parse
         'LSVCA.DTA',
         'LSV.DTA',
         'necc_test_no_properties.xlsx',
-        '20260206_necc_ec_gc_template.xlsx',
+        '20260227_necc_ec_gc_template.xlsx',
         'NOME_RRDE_CVCA.DTA',
         'OCP.DTA',
         'P-O2D109.pump.csv',
@@ -420,7 +420,7 @@ def test_tfc_sputtering_parser():
 
 
 def test_necc_ecgc_excel():
-    file = '20260206_necc_ec_gc_template.xlsx'
+    file = '20260227_necc_ec_gc_template.xlsx'
     archive = get_archive(file)
     normalize_all(archive)
     assert archive.data
