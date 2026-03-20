@@ -346,15 +346,21 @@ class CE_NECC_EC_GC(PotentiometryGasChromatographyMeasurement, PlotSection, Entr
                 )
             )
         elif self.fe_results.pH_start and self.fe_results.pH_end:
-            fig.add_trace(
-                go.Scatter(
-                    name='pH',
-                    x=[self.fe_results.datetime[0], self.fe_results.datetime[-1]],
-                    y=[self.fe_results.pH_start, self.fe_results.pH_end],
-                    yaxis='y3',
-                    line=dict(color='green'),
+            if not np.isnan(self.fe_results.pH_start) and not np.isnan(
+                self.fe_results.pH_end
+            ):
+                fig.add_trace(
+                    go.Scatter(
+                        name='pH',
+                        x=[
+                            self.fe_results.datetime[0].strftime('%Y-%m-%d %H:%M:%S'),
+                            self.fe_results.datetime[-1].strftime('%Y-%m-%d %H:%M:%S'),
+                        ],
+                        y=[self.fe_results.pH_start, self.fe_results.pH_end],
+                        yaxis='y3',
+                        line=dict(color='green'),
+                    )
                 )
-            )
         if self.ph.ph_value is not None or self.fe_results.pH_start:
             fig.update_layout(
                 yaxis3=dict(
@@ -495,7 +501,9 @@ class CE_NECC_EC_GC(PotentiometryGasChromatographyMeasurement, PlotSection, Entr
                     data = pd.read_excel(xls_file, sheet_name='Raw Data', header=1)
                     ph_data = self.get_cleaned_df(data, ['Date', 'pH Time', 'pH'])
                     ph_start_time = None
-                    if data.columns.get_loc('pH') + 1 < len(data.columns):
+                    if 'pH' in data.columns and data.columns.get_loc('pH') + 1 < len(
+                        data.columns
+                    ):
                         potential_start_time = data.columns[
                             data.columns.get_loc('pH') + 1
                         ]
