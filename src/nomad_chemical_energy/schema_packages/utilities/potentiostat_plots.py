@@ -16,7 +16,7 @@ def make_bode_plot(measurements):
             or cycle.data.z_angle is None
         ):
             return fig
-        fig.add_traces(
+        fig.add_trace(
             go.Scatter(
                 name=f'|Z| {idx}',
                 x=cycle.data.frequency,
@@ -26,7 +26,7 @@ def make_bode_plot(measurements):
                 yaxis='y1',
             )
         )
-        fig.add_traces(
+        fig.add_trace(
             go.Scatter(
                 name=f'Phase(Z) {idx}',
                 x=cycle.data.frequency,
@@ -167,7 +167,7 @@ def make_current_density_over_voltage_rhe_cv_plot(cycles):
         if v_unit is None or cd_unit is None:
             v_unit = f'{cycle.voltage_rhe_compensated.units:~P}'
             cd_unit = f'{cycle.current_density.units:~P}'
-        fig.add_traces(
+        fig.add_trace(
             go.Scatter(
                 name=f'Current Density {idx}',
                 x=cycle.voltage_rhe_compensated,
@@ -200,7 +200,7 @@ def make_current_over_voltage_cv_plot(cycles):
     for idx, cycle in enumerate(cycles):
         if cycle.voltage is None or cycle.current is None:
             return fig
-        fig.add_traces(
+        fig.add_trace(
             go.Scatter(
                 name=f'Current {idx}',
                 x=cycle.voltage,
@@ -267,7 +267,7 @@ def make_nyquist_plot(measurements):
             return fig
         if cycle.data.z_imaginary is None or cycle.data.z_real is None:
             return fig
-        fig.add_traces(
+        fig.add_trace(
             go.Scatter(
                 name=f'Nyquist {idx}',
                 x=cycle.data.z_real,
