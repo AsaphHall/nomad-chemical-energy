@@ -46,7 +46,7 @@ m_package = SchemaPackage()
 
 class HZB_SEM_Merlin(SEM_Microscope_Merlin, EntryData):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0000075"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0000075'],
         a_eln=dict(
             hide=[
                 'lab_id',
@@ -145,7 +145,7 @@ class HZB_XRR_Library(XRRLibrary, EntryData):
 
 class HZB_XRF(XRF, EntryData):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0000067"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0000067'],
         a_eln=dict(
             hide=[
                 'lab_id',
@@ -192,7 +192,7 @@ class HZB_XRF_Library(XRFLibrary, EntryData):
 
 class HZB_XRD(XRD, EntryData):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0000077"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0000077'],
         a_eln=dict(
             hide=[
                 'lab_id',
@@ -283,7 +283,7 @@ class HZB_XRD_Library(XRDLibrary, EntryData):
 
 class HZB_XPS(XPS, EntryData):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0000076"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0000076'],
         a_eln=dict(
             hide=[
                 'lab_id',
@@ -322,7 +322,7 @@ class HZB_XPS_Library(XPSLibrary, EntryData):
 
 class HZB_TGA(TGA, EntryData):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0000072"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0000072'],
         a_eln=dict(
             hide=[
                 'lab_id',

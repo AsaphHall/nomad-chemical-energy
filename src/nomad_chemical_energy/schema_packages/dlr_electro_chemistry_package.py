@@ -37,7 +37,7 @@ class DLR_ElectrochemicalImpedanceSpectroscopy(
     ElectrochemicalImpedanceSpectroscopy, EntryData
 ):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0007209"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0007209'],
         a_eln=dict(
             hide=[
                 'lab_id',
@@ -111,7 +111,7 @@ class DLR_ElectrochemicalImpedanceSpectroscopy(
 
 class DLR_CyclicVoltammetry(CyclicVoltammetry, EntryData):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0000082"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0000082'],
         a_eln=dict(
             hide=[
                 'lab_id',
@@ -197,7 +197,7 @@ class DLR_CyclicVoltammetry(CyclicVoltammetry, EntryData):
 
 class DLR_Chronopotentiometry(Chronopotentiometry, EntryData):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0007208"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0007208'],
         a_eln=dict(
             hide=[
                 'lab_id',

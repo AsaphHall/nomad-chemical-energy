@@ -69,7 +69,7 @@ m_package = SchemaPackage()
 
 class Wannsee_EM_M001_SEM_Merlin(SEM_Microscope_Merlin, EntryData):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0000075"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0000075'],
         a_eln=dict(
             hide=[
                 'lab_id',
@@ -90,7 +90,7 @@ class Wannsee_EM_M001_SEM_Merlin(SEM_Microscope_Merlin, EntryData):
 # %%
 class Wannsee_D8_XRD_Bruker(XRD, EntryData):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0000077"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0000077'],
         a_eln=dict(
             hide=[
                 'lab_id',
@@ -128,7 +128,7 @@ class Wannsee_D8_XRD_Bruker(XRD, EntryData):
 
 class Wannsee_XRD_XY(XRD, EntryData):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0000077"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0000077'],
         a_eln=dict(
             hide=[
                 'lab_id',
@@ -182,7 +182,7 @@ class Wannsee_XRD_XY(XRD, EntryData):
 
 class Wannsee_B307_CyclicVoltammetry_ECLab(CyclicVoltammetry, EntryData):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0000082"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0000082'],
         a_eln=dict(
             hide=[
                 'lab_id',
@@ -252,7 +252,7 @@ class Wannsee_B307_CyclicVoltammetry_ECLab(CyclicVoltammetry, EntryData):
 
 class Wannsee_B307_CyclicVoltammetry_CorrWare(CyclicVoltammetry, EntryData):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0000082"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0000082'],
         a_eln=dict(
             hide=[
                 'lab_id',
@@ -325,7 +325,7 @@ class Wannsee_B307_ElectrochemicalImpedanceSpectroscopy_ECLab(
     ElectrochemicalImpedanceSpectroscopy, EntryData
 ):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0007209"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0007209'],
         a_eln=dict(
             hide=[
                 'lab_id',
@@ -390,7 +390,7 @@ class Wannsee_B307_ElectrochemicalImpedanceSpectroscopy_ECLab(
 
 class Wannsee_B307_OpenCircuitVoltage_ECLab(OpenCircuitVoltage, EntryData):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0007251"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0007251'],
         a_eln=dict(
             hide=[
                 'lab_id',

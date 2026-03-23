@@ -93,7 +93,7 @@ class CE_NECC_ElectrodeRecipe(CENECCElectrodeRecipe, EntryData):
 
 class CE_NECC_Electrode(CENECCElectrode, EntryData):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0007201"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0007201'],
         a_eln=dict(
             hide=[
                 'chemical_composition_or_formulas',
@@ -675,7 +675,7 @@ class CE_NECC_EC_GC(PotentiometryGasChromatographyMeasurement, PlotSection, Entr
 
 class CE_NECC_Chronoamperometry(Chronoamperometry, EntryData, PlotSection):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0007207"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0007207'],
         a_eln=dict(
             hide=[
                 'metadata_file',
@@ -740,7 +740,7 @@ class CE_NECC_Chronoamperometry(Chronoamperometry, EntryData, PlotSection):
 
 class CE_NECC_Chronopotentiometry(Chronopotentiometry, EntryData, PlotSection):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0007208"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0007208'],
         a_eln=dict(
             hide=[
                 'metadata_file',
@@ -922,7 +922,7 @@ class CE_NECC_ConstantVoltageMode(Chronoamperometry, EntryData, PlotSection):
 
 class CE_NECC_CyclicVoltammetry(CyclicVoltammetry, EntryData, PlotSection):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0000082"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0000082'],
         a_eln=dict(
             hide=[
                 'users',
@@ -996,7 +996,7 @@ class CE_NECC_GEIS(
     ElectrochemicalImpedanceSpectroscopyMultiple, EntryData, PlotSection
 ):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0007209"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0007209'],
         a_eln=dict(
             hide=[
                 'environment',
@@ -1064,7 +1064,7 @@ class CE_NECC_GEIS(
 
 class CE_NECC_LinearSweepVoltammetry(LinearSweepVoltammetry, EntryData, PlotSection):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0007211"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0007211'],
         a_eln=dict(
             hide=[
                 'metadata_file',
@@ -1135,7 +1135,7 @@ class CE_NECC_LinearSweepVoltammetry(LinearSweepVoltammetry, EntryData, PlotSect
 
 class CE_NECC_OpenCircuitVoltage(OpenCircuitVoltage, EntryData, PlotSection):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0007251"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0007251'],
         a_eln=dict(
             hide=[
                 'metadata_file',
@@ -1200,7 +1200,7 @@ class CE_NECC_PEIS(
     ElectrochemicalImpedanceSpectroscopyMultiple, EntryData, PlotSection
 ):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0007209"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0007209'],
         a_eln=dict(
             hide=[
                 'environment',

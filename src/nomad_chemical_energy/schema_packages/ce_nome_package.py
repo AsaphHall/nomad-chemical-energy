@@ -82,6 +82,7 @@ class CE_NOME_Design(Design, EntryData):
 
 class CE_NOME_Sample(CENOMESample, EntryData):
     m_def = Section(
+        links=['https://w3id.org/nfdi4cat/voc4cat_0005056'],
         a_eln=dict(
             hide=['users', 'elemental_composition', 'components'],
             properties=dict(
@@ -99,7 +100,7 @@ class CE_NOME_Sample(CENOMESample, EntryData):
 
 class CE_NOME_Electrode(Electrode, EntryData):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0007201"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0007201'],
         a_eln=dict(
             hide=['users', 'origin', 'elemental_composition', 'components'],
             properties=dict(
@@ -117,7 +118,7 @@ class CE_NOME_Electrode(Electrode, EntryData):
 
 class CE_NOME_Equipment(Equipment, EntryData):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0000187"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0000187'],
         a_eln=dict(
             hide=['users', 'origin', 'elemental_composition', 'components'],
             properties=dict(order=['name', 'lab_id', 'producer', 'location']),
@@ -144,7 +145,7 @@ class CE_NOME_Equipment(Equipment, EntryData):
 
 class CE_NOME_Environment(Environment, EntryData):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0007223"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0007223'],
         a_eln=dict(
             hide=[
                 'users',
@@ -196,7 +197,7 @@ class CE_NOME_Chemical(Substance, EntryData):
 
 class CE_NOME_ElectroChemicalSetup(ElectroChemicalSetup, EntryData):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0007230"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0007230'],
         a_eln=dict(
             hide=[
                 'users',
@@ -604,7 +605,7 @@ class CE_NOME_DocumentationTool(DocumentationTool, EntryData):
 
 class Bessy2_KMC2_XASFluorescence(XASFluorescence, EntryData):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0008082"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0008082'],
         a_eln=dict(
             hide=[
                 'lab_id',
@@ -639,7 +640,7 @@ class Bessy2_KMC2_XASFluorescence(XASFluorescence, EntryData):
 
 class Bessy2_KMC2_XASTransmission(XASTransmission, EntryData):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0008081"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0008081'],
         a_eln=dict(
             hide=[
                 'lab_id',
@@ -691,7 +692,7 @@ def get_kmc3_data(file):
 
 class Bessy2_KMC3_XASFluorescence(XASWithSDD, EntryData):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0008082"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0008082'],
         a_eln=dict(
             hide=[
                 'lab_id',
@@ -733,7 +734,7 @@ class Bessy2_KMC3_XASFluorescence(XASWithSDD, EntryData):
 
 class Bessy2_KMC3_XASTransmission(XASWithSDD, EntryData):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0008081"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0008081'],
         a_eln=dict(
             hide=[
                 'lab_id',
@@ -775,7 +776,7 @@ class CE_NOME_ElectrochemicalImpedanceSpectroscopy(
     ElectrochemicalImpedanceSpectroscopy, EntryData
 ):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0007209"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0007209'],
         a_eln=dict(
             hide=[
                 'lab_id',
@@ -877,7 +878,7 @@ class CE_NOME_VoilaNotebook(VoilaNotebook, EntryData):
 
 class CE_NOME_CyclicVoltammetry(CyclicVoltammetry, EntryData):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0000082"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0000082'],
         a_eln=dict(
             hide=[
                 'lab_id',
@@ -963,7 +964,7 @@ class CE_NOME_CyclicVoltammetry(CyclicVoltammetry, EntryData):
 
 class CE_NOME_LinearSweepVoltammetry(LinearSweepVoltammetry, EntryData):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0007211"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0007211'],
         a_eln=dict(
             hide=[
                 'lab_id',
@@ -1118,7 +1119,7 @@ class CE_NOME_GalvanodynamicSweep(GalvanodynamicSweep, EntryData):
 
 class CE_NOME_Chronoamperometry(Chronoamperometry, EntryData, PlotSection):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0007207"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0007207'],
         a_eln=dict(
             hide=[
                 'lab_id',
@@ -1207,7 +1208,7 @@ class CE_NOME_Chronoamperometry(Chronoamperometry, EntryData, PlotSection):
 
 class CE_NOME_Chronopotentiometry(Chronopotentiometry, EntryData):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0007208"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0007208'],
         a_eln=dict(
             hide=[
                 'lab_id',
@@ -1276,7 +1277,7 @@ class CE_NOME_Chronopotentiometry(Chronopotentiometry, EntryData):
 
 class CE_NOME_Chronocoulometry(Chronocoulometry, EntryData):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0007212"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0007212'],
         a_eln=dict(
             hide=[
                 'lab_id',
@@ -1341,7 +1342,7 @@ class CE_NOME_Chronocoulometry(Chronocoulometry, EntryData):
 
 class CE_NOME_OpenCircuitVoltage(OpenCircuitVoltage, EntryData):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0007251"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0007251'],
         a_eln=dict(
             hide=[
                 'lab_id',
@@ -1406,7 +1407,7 @@ class CE_NOME_OpenCircuitVoltage(OpenCircuitVoltage, EntryData):
 
 class CE_NOME_UVvismeasurement(UVvisMeasurement, EntryData, PlotSection):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0000079"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0000079'],
         a_eln=dict(
             hide=[
                 'lab_id',
@@ -1682,7 +1683,7 @@ class CE_NOME_TIF_Image(BaseMeasurement, EntryData):
 
 class CE_NOME_Massspectrometry(Massspectrometry, EntryData, PlotSection):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0000137"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0000137'],
         a_eln=dict(
             hide=[
                 'lab_id',
@@ -1761,7 +1762,7 @@ class CE_NOME_Massspectrometry(Massspectrometry, EntryData, PlotSection):
 
 class CE_NOME_Process(BaseProcess, EntryData):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0000185"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0000185'],
         a_eln=dict(
             hide=[
                 'lab_id',

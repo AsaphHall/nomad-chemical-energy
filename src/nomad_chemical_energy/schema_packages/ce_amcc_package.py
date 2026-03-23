@@ -54,6 +54,7 @@ m_package = SchemaPackage()
 
 class CE_AMCC_Sample(CENOMESample, EntryData):
     m_def = Section(
+        links=['https://w3id.org/nfdi4cat/voc4cat_0005056'],
         a_eln=dict(
             hide=['users', 'elemental_composition', 'components'],
             properties=dict(
@@ -92,7 +93,7 @@ class CE_AMCC_Measurement(BaseMeasurement, EntryData):
 
 class CE_AMCC_Chronoamperometry(Chronoamperometry, EntryData, PlotSection):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0007207"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0007207'],
         a_eln=dict(
             hide=[
                 'metadata_file',
@@ -157,7 +158,7 @@ class CE_AMCC_Chronoamperometry(Chronoamperometry, EntryData, PlotSection):
 
 class CE_AMCC_Chronopotentiometry(Chronopotentiometry, EntryData, PlotSection):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0007208"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0007208'],
         a_eln=dict(
             hide=[
                 'metadata_file',
@@ -339,7 +340,7 @@ class CE_AMCC_ConstantVoltageMode(Chronoamperometry, EntryData, PlotSection):
 
 class CE_AMCC_CyclicVoltammetry(CyclicVoltammetry, EntryData, PlotSection):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0000082"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0000082'],
         a_eln=dict(
             hide=[
                 'users',
@@ -417,7 +418,7 @@ class CE_AMCC_GEIS(
     ElectrochemicalImpedanceSpectroscopyMultiple, EntryData, PlotSection
 ):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0007209"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0007209'],
         a_eln=dict(
             hide=[
                 'environment',
@@ -485,7 +486,7 @@ class CE_AMCC_GEIS(
 
 class CE_AMCC_LinearSweepVoltammetry(LinearSweepVoltammetry, EntryData, PlotSection):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0007211"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0007211'],
         a_eln=dict(
             hide=[
                 'metadata_file',
@@ -556,7 +557,7 @@ class CE_AMCC_LinearSweepVoltammetry(LinearSweepVoltammetry, EntryData, PlotSect
 
 class CE_AMCC_OpenCircuitVoltage(OpenCircuitVoltage, EntryData, PlotSection):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0007251"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0007251'],
         a_eln=dict(
             hide=[
                 'metadata_file',
@@ -621,7 +622,7 @@ class CE_AMCC_PEIS(
     ElectrochemicalImpedanceSpectroscopyMultiple, EntryData, PlotSection
 ):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0007209"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0007209'],
         a_eln=dict(
             hide=[
                 'environment',
@@ -690,7 +691,7 @@ class CE_AMCC_PEIS(
 
 class CE_AMCC_ZIR(ElectrochemicalImpedanceSpectroscopyMultiple, EntryData):
     m_def = Section(
-        links=["https://w3id.org/nfdi4cat/voc4cat_0007209"],
+        links=['https://w3id.org/nfdi4cat/voc4cat_0007209'],
         a_eln=dict(
             hide=[
                 'environment',
@@ -759,6 +760,7 @@ class CE_AMCC_CVMetrics(AnalysisResult):
     )
 
     current_density_at_1_5_RHE = Quantity(
+        links=['https://w3id.org/nfdi4cat/voc4cat_0007221'],
         type=np.dtype(np.float64),
         unit='mA/cm^2',
         description='Current density at 1.5 V RHE. Data extracted from the first backscan of CV measurements.',
