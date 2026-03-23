@@ -587,11 +587,13 @@ def set_catalyst_details(archive, file):
     data_sheet.index = data_sheet.index.str.strip().str.lower()
     if archive.data.properties.cathode is None:
         cathode_data = data_sheet[1].dropna()
-        archive.data.properties.cathode = _get_electrode_comp_system_reference(
-            archive, cathode_data, 'cathode'
-        )
+        if not cathode_data.empty:
+            archive.data.properties.cathode = _get_electrode_comp_system_reference(
+                archive, cathode_data, 'cathode'
+            )
     if archive.data.properties.anode is None:
         anode_data = data_sheet[4].dropna()
-        archive.data.properties.anode = _get_electrode_comp_system_reference(
-            archive, anode_data, 'anode'
-        )
+        if not anode_data.empty:
+            archive.data.properties.anode = _get_electrode_comp_system_reference(
+                archive, anode_data, 'anode'
+            )
