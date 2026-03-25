@@ -86,6 +86,15 @@ class TFCPackageEntryPoint(SchemaPackageEntryPoint):
         return m_package
 
 
+class PublicShowcasePackageEntryPoint(SchemaPackageEntryPoint):
+    def load(self):
+        from nomad_chemical_energy.schema_packages.public_showcase_package import (
+            m_package,
+        )
+
+        return m_package
+
+
 ce_amcc_package = CEAMCCPackageEntryPoint(
     name='CE_AMCC',
     description='Package for HZB group CE-AMCC',
@@ -140,4 +149,9 @@ hzb_general_process_package = HZBGeneralPackageEntryPoint(
 tfc_schema_package = TFCPackageEntryPoint(
     name='TFC',
     description='Package for Thin Film Catalysts Group',
+)
+
+public_showcase_package = PublicShowcasePackageEntryPoint(
+    name='PublicShowcase',
+    description='Package for Science Communication at public events like GirlsDay or Long Night of Science',
 )
