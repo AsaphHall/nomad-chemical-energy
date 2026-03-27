@@ -445,3 +445,16 @@ def test_necc_ecgc_excel():
         '2026-01-19 10:43:33+0000', tz='UTC'
     )
     assert archive.data.ph.ph_value[0] == 12.273
+
+
+def test_girlsday_emar_showcase_parser():
+    file = 'girlsday_emarshowcase_20Deg.txt'
+    archive = get_archive(file)
+    normalize_all(archive)
+    assert archive.data
+    assert archive.data.data_file
+    assert archive.data.temperature.magnitude == 20
+    assert round(archive.data.datetime.timestamp(), 0) == 1769703555
+    assert archive.data.emar_showcase
+    assert archive.data.emar_showcase.pH[0] == 7.785
+    assert archive.data.emar_showcase.timestamp[-1].magnitude == 1160

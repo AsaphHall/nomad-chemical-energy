@@ -29,7 +29,7 @@ maintainers = [
 ]
 license = { file = "LICENSE" }
 dependencies = [
-    "nomad-lab>=1.4.0",
+    "nomad-lab>=1.4.1",
     'nomad-baseclasses @ git+https://github.com/nomad-hzb/nomad-baseclasses.git',
     'nomad-measurements',
     'nomad-material-processing',
@@ -184,3 +184,6 @@ nesd_oer_app = "nomad_chemical_energy.apps:nesd_oer_app"
 amcc_reproducibility_app = "nomad_chemical_energy.apps:amcc_reproducibility_app"
 catlab_combinatorial_library_app = "nomad_chemical_energy.apps:catlab_combinatorial_library_app"
 catlab_pixel_app = "nomad_chemical_energy.apps:catlab_pixel_app"
+
+public_showcase_package = "nomad_chemical_energy.schema_packages:public_showcase_package"
+public_showcase_parser = "nomad_chemical_energy.parsers:public_showcase_parser"

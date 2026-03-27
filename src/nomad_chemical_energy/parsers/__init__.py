@@ -209,6 +209,15 @@ class TFCXRDLibraryParserEntryPoint(ParserEntryPoint):
         return TFCXRDParser(**self.dict())
 
 
+class PublicShowcaseParserEntryPoint(ParserEntryPoint):
+    def load(self):
+        from nomad_chemical_energy.parsers.public_showcase_parser import (
+            PublicShowcaseParser,
+        )
+
+        return PublicShowcaseParser(**self.dict())
+
+
 ce_amcc_biologic_parser = CEAMCCBioLogicParserEntryPoint(
     name='CEAMCCBioLogicParser',
     description='Parser for CEAMCC mpr files of BioLogic/EC-Lab potentiostats',
@@ -408,4 +417,13 @@ tfc_xrd_parser = TFCXRDLibraryParserEntryPoint(
     description='Parse txt files with xrd. Files are defined for the Thin Film Catalysis Group.',
     mainfile_name_re=r'.*log_all.txt',
     mainfile_contents=r'########## start Header ##########.*# xlab 0.6.4 log all file',
+)
+
+public_showcase_parser = PublicShowcaseParserEntryPoint(
+    name='EMARShowcaseParser',
+    description='Parse txt files with time and pH data. '
+    'Files are defined for simplified science communication experiments '
+    'regarding the EMAR (Electrochemically-Mediated Amine Regeneration) setup.',
+    mainfile_name_re=r'.*\.txt',
+    mainfile_contents=r'Time pH.*\nRun 1, started.*\nhh:mm:ss pH',
 )
